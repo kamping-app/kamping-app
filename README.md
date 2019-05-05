@@ -1,4 +1,6 @@
-# kamping-app
+# Kamping App
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12e19910-3fe2-4be2-a53c-5eb044b90ce7/deploy-status)](https://app.netlify.com/sites/kamping/deploys)
 
 ## Project setup
 ```
