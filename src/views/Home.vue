@@ -23,14 +23,36 @@
           Find
         </button>
       </div>
+      <featured-cities
+        :cities="[
+          {
+            state: 'Minas Gerais',
+            city: 'São Thomé das Letras',
+            slug: 'sao-thome-das-letras'
+          },
+          {
+            state: 'São Paulo',
+            city: 'Socorro',
+            slug: 'socorro'
+          },
+          {
+            state: 'Minas Gerais',
+            city: 'Extrema',
+            slug: 'extrema'
+          }
+        ]"
+      />
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import FeaturedCities from '../components/FeaturedCities'
 
 export default {
-  name: 'home'
+  name: 'home',
+  components: {
+    'featured-cities': FeaturedCities
+  }
 }
 </script>
