@@ -1,14 +1,19 @@
 <template>
   <div class="page-city">
     <router-link to="/">Home</router-link>
-    <h1 class="text-3xl font-bold text-grey-500">{{ city.name }}</h1>
     <div v-if="loading">Carregando dados</div>
-    <div v-for="camping in city.campings" :key="camping.id">
-      <a
-        class="text-light-blue-vivid-800 underline"
-        v-bind:href="'campings/' + camping.hashids"
-        >{{ camping.name }}</a
-      >
+    {{ loading }}
+    <div v-if="!loading">
+      <h1 v-if="!loading" class="text-3xl font-bold text-grey-500">
+        {{ city.name }}
+      </h1>
+      <div v-for="camping in city.campings" :key="camping.id">
+        <router-link
+          class="text-light-blue-vivid-800 underline"
+          :to="`/campings/${camping.hashids}`"
+          >{{ camping.name }}</router-link
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -17,12 +22,12 @@
 import axios from 'axios'
 
 export default {
-  props: ['city_slug'],
+  props: ['city_slug', 'city_id'],
   data() {
     return {
       loading: false,
       city: {
-        name: null,
+        name: null || '',
         campings: null
       }
     }
@@ -35,7 +40,12 @@ export default {
       const self = this
       self.loading = true
       axios
-        .get(`http://127.0.0.1:3333/cities/${this.city_slug}`)
+        .get(`http://127.0.0.1:3333/cities/${this.city_id}`, {
+          headers: {
+            Authorization:
+              'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1Nzc1MDI4N30.2nG-uKrIp562NTCklQ3Mc7F--i2XQ7iBukN0FzbRUuA'
+          }
+        })
         .then(res => {
           this.city = res.data[0]
           self.loading = false
