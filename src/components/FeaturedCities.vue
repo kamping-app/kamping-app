@@ -6,7 +6,9 @@
       :key="index"
     >
       <h3 class="text-2xl font-thin">{{ city.city }}</h3>
-      <router-link class="underline" :to="`/cities/${city.slug}`"
+      <router-link
+        class="underline"
+        :to="`/cities/${city.slug}/${city.hashids}`"
         >Ver cidade</router-link
       >
     </div>
