@@ -17,9 +17,6 @@
 
 <script>
 export default {
-  props: ['cities'],
-  mounted() {
-    console.log(this.cities)
-  }
+  props: ['cities']
 }
 </script>
