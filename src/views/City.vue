@@ -1,28 +1,36 @@
 <template>
   <div class="page-city">
-    <router-link to="/">Home</router-link>
-    <div v-if="loading">Carregando dados</div>
-    {{ loading }}
-    <div v-if="!loading">
+    <wrapper>
       <h1 v-if="!loading" class="text-3xl font-bold text-grey-500">
         {{ city.name }}
       </h1>
-      <div v-for="camping in city.campings" :key="camping.id">
-        <router-link
-          class="text-light-blue-vivid-800 underline"
-          :to="`/campings/${camping.hashids}`"
-          >{{ camping.name }}</router-link
+      <div v-if="loading">Carregando dados..</div>
+    </wrapper>
+    <wrapper class="flex justify-between" v-if="!loading">
+      <div class="w-full lg:w-3/5">
+        <camping-card
+          v-for="camping in city.campings"
+          :data="camping"
+          :key="camping.id"
         >
+        </camping-card>
       </div>
-    </div>
+      <div class="hidden lg:block lg:2/5">mapa</div>
+    </wrapper>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import CampingCard from '@/components/CampingCard'
+import Wrapper from '@/components/Wrapper'
 
 export default {
   props: ['city_slug', 'city_id'],
+  components: {
+    'camping-card': CampingCard,
+    wrapper: Wrapper
+  },
   data() {
     return {
       loading: false,
