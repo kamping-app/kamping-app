@@ -12,12 +12,14 @@ export default new Router({
     {
       path: '/',
       name: 'home',
+      meta: { layout: 'blank' },
       component: Home
     },
     {
       path: '/cities/:city_slug/:city_id',
       name: 'city',
       component: City,
+      meta: { layout: 'default' },
       props: true
     },
     {
