@@ -29,19 +29,19 @@
             state: 'Minas Gerais',
             city: 'São Thomé das Letras',
             slug: 'sao-thome-das-letras',
-            hashids: 'RzLvY8qxNpoE'
+            hashids: 'vY8qxN'
           },
           {
             state: 'São Paulo',
             city: 'Socorro',
             slug: 'socorro',
-            hashids: 'RzLvY8qxNpoE'
+            hashids: 'vY8qxN'
           },
           {
             state: 'Minas Gerais',
             city: 'Extrema',
             slug: 'extrema',
-            hashids: 'RzLvY8qxNpoE'
+            hashids: 'vY8qxN'
           }
         ]"
       />
