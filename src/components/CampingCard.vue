@@ -23,9 +23,6 @@ export default {
     return {
       image: require('@/assets/images/camping.jpg')
     }
-  },
-  mounted() {
-    console.log(this.image)
   }
 }
 </script>
