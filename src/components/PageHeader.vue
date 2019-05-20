@@ -15,13 +15,19 @@
         menu
       </button>
       <nav class="hidden sm:block">
-        <router-link class="ml-4 text-lg text-grey-700" to="/"
+        <router-link
+          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
+          to="/"
           >Principais cidades</router-link
         >
-        <router-link class="ml-4 text-lg text-grey-700" to="/"
+        <router-link
+          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
+          to="/"
           >Blog</router-link
         >
-        <router-link class="ml-4 text-lg text-grey-700" to="/"
+        <router-link
+          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
+          to="/"
           >Login</router-link
         >
       </nav>
@@ -38,13 +44,13 @@
             src="../assets/images/kamping-logo.png"
           />
           <nav class="my-8">
-            <router-link class="block text-xl text-grey-500" to="/"
+            <router-link class="block uppercase my-2 text-grey-500" to="/"
               >Principais cidades</router-link
             >
-            <router-link class="block text-xl text-grey-500" to="/"
+            <router-link class="block uppercase my-2 text-grey-500" to="/"
               >Blog</router-link
             >
-            <router-link class="block text-xl text-grey-500" to="/"
+            <router-link class="block uppercase my-2 text-grey-500" to="/"
               >Login</router-link
             >
           </nav>
@@ -57,6 +63,7 @@
         </div>
       </div>
     </div>
+    <hr class="border-t border-grey-100 mt-3" />
   </header>
 </template>
 

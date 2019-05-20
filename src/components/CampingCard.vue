@@ -7,7 +7,7 @@
           :style="`background-image: url('${image}')`"
         ></div>
         <div class="w-full md:w-3/5 p-3">
-          <h3 class="text-xl font-semibold text-grey-900">
+          <h3 class=" md:text-xl font-semibold text-grey-900">
             {{ data.name }}
           </h3>
         </div>

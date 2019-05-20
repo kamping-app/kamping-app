@@ -1,7 +1,7 @@
 <template>
   <div class="page-city">
     <wrapper>
-      <h1 v-if="!loading" class="text-3xl font-bold text-grey-500">
+      <h1 v-if="!loading" class="text-xl md:text-3xl font-bold text-grey-500">
         {{ city.name }}
       </h1>
       <div v-if="loading">Carregando dados..</div>
