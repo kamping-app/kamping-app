@@ -8,7 +8,12 @@
           src="../assets/images/kamping-logo.png"
         />
       </router-link>
-      <button v-on:click="toggleMobileMenu" class="sm:hidden">menu</button>
+      <button
+        class="sm:hidden focus text-xs font-thin text-grey-500 border border-grey-300 py-1 px-3 rounded-full"
+        v-on:click="toggleMobileMenu"
+      >
+        menu
+      </button>
       <nav class="hidden sm:block">
         <router-link class="ml-4 text-lg text-grey-700" to="/"
           >Principais cidades</router-link
