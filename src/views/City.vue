@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import CityService from '@/services/city.services'
 import CampingCard from '@/components/CampingCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import Wrapper from '@/components/Wrapper'
@@ -68,18 +68,11 @@ export default {
   },
   methods: {
     getCity: function() {
-      const self = this
+      const _self = this
       self.loading = true
-      axios
-        .get(`http://127.0.0.1:3333/cities/${this.city_id}`, {
-          headers: {
-            Authorization:
-              'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1Nzc1MDI4N30.2nG-uKrIp562NTCklQ3Mc7F--i2XQ7iBukN0FzbRUuA'
-          }
-        })
+      CityService.get(_self.city_id)
         .then(res => {
-          this.city = res.data[0]
-          self.loading = false
+          _self.city = res.data[0]
         })
         .catch(e => console.error(e))
     }
