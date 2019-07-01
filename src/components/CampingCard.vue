@@ -7,9 +7,9 @@
           :style="`background-image: url('${image}')`"
         ></div>
         <div class="w-full md:w-3/5 p-3">
-          <h3 class=" md:text-xl font-semibold text-grey-900">
+          <generic-title tag="h3" :text="data.name">
             {{ data.name }}
-          </h3>
+          </generic-title>
         </div>
       </div>
     </router-link>
@@ -17,8 +17,12 @@
 </template>
 
 <script>
+import GenericTitle from '@/components/GenericTitle/GenericTitle'
 export default {
   props: ['data'],
+  components: {
+    'generic-title': GenericTitle
+  },
   data() {
     return {
       image: require('@/assets/images/camping.jpg')
