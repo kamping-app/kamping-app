@@ -37,7 +37,7 @@
 import CityService from '@/services/city.services'
 import CampingCard from '@/components/CampingCard'
 import Loading from '@/components/atoms/Loading'
-import Breadcrumbs from '@/components/Breadcrumbs'
+import Breadcrumbs from '@/components/molecules/Breadcrumbs'
 import Wrapper from '@/components/Wrapper'
 
 export default {
