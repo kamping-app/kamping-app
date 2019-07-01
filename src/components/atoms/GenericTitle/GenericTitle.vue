@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="" v-if="tag === 'h1'">
+    <h1 class="text-xl md:text-3xl font-bold text-grey-500" v-if="tag === 'h1'">
       <slot />
     </h1>
 

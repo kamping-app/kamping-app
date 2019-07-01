@@ -15,9 +15,9 @@
         ]"
         :current="city.name"
       />
-      <h1 v-if="!loading" class="text-xl md:text-3xl font-bold text-grey-500">
-        {{ city.name }}
-      </h1>
+    </wrapper>
+    <wrapper class="flex justify-between" v-if="!loading">
+      <generic-title tag="h1">{{ city.name }}</generic-title>
     </wrapper>
     <wrapper class="flex justify-between" v-if="!loading">
       <div class="w-full lg:w-3/5">
@@ -37,6 +37,7 @@
 import CityService from '@/services/city.services'
 import CampingCard from '@/components/CampingCard'
 import Loading from '@/components/atoms/Loading'
+import GenericTitle from '@/components/atoms/GenericTitle'
 import Breadcrumbs from '@/components/molecules/Breadcrumbs'
 import Wrapper from '@/components/Wrapper'
 
@@ -44,6 +45,7 @@ export default {
   props: ['city_slug', 'city_id'],
   components: {
     'camping-card': CampingCard,
+    'generic-title': GenericTitle,
     breadcrumbs: Breadcrumbs,
     loading: Loading,
     wrapper: Wrapper
