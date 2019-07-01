@@ -10,6 +10,11 @@
           <generic-title tag="h3">
             {{ data.name }}
           </generic-title>
+          <!-- TODO: Remove These mock values  -->
+          <rantings
+            :commemts="Math.floor(Math.random() * 50 + 5)"
+            :stars="Math.floor(Math.random() * 5 + 1)"
+          ></rantings>
         </div>
       </div>
     </router-link>
@@ -18,10 +23,12 @@
 
 <script>
 import GenericTitle from '@/components/atoms/GenericTitle'
+import Rantings from '@/components/molecules/Rantings'
 export default {
   props: ['data'],
   components: {
-    'generic-title': GenericTitle
+    'generic-title': GenericTitle,
+    rantings: Rantings
   },
   data() {
     return {
