@@ -7,7 +7,7 @@
           :style="`background-image: url('${image}')`"
         ></div>
         <div class="w-full md:w-3/5 p-3">
-          <generic-title tag="h3" :text="data.name">
+          <generic-title tag="h3">
             {{ data.name }}
           </generic-title>
         </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import GenericTitle from '@/components/GenericTitle'
+import GenericTitle from '@/components/atoms/GenericTitle'
 export default {
   props: ['data'],
   components: {
