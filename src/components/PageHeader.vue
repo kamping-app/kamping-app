@@ -65,7 +65,7 @@
 
 <script>
 import Wrapper from '@/components/Wrapper'
-import KampingLogo from '@/components/atoms/KampingLogo/KampingLogo'
+import KampingLogo from '@/components/atoms/KampingLogo'
 export default {
   components: {
     wrapper: Wrapper,

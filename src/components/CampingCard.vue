@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import GenericTitle from '@/components/GenericTitle/GenericTitle'
+import GenericTitle from '@/components/GenericTitle'
 export default {
   props: ['data'],
   components: {
