@@ -1,5 +1,5 @@
 <template>
-  <img :src="logo" alt="Kamping logo" class="w-64 mx-auto mb-6" />
+  <img :src="logo" alt="Kamping logo" class="w-64 mb-6" />
 </template>
 
 <script>
