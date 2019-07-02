@@ -11,10 +11,7 @@
             {{ data.name }}
           </generic-title>
           <!-- TODO: Remove These mock values  -->
-          <rantings
-            :commemts="Math.floor(Math.random() * 50 + 5)"
-            :stars="Math.floor(Math.random() * 5 + 1)"
-          ></rantings>
+          <rantings :stars="Math.floor(Math.random() * 5 + 1)"></rantings>
         </div>
       </div>
     </router-link>
@@ -32,6 +29,7 @@ export default {
   },
   data() {
     return {
+      comments: Math.floor(Math.random() * 50 + 5),
       image: require('@/assets/images/camping.jpg')
     }
   }
