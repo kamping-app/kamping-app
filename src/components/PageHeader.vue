@@ -2,11 +2,7 @@
   <header class="my-3">
     <wrapper class="flex justify-between items-center">
       <router-link to="/">
-        <img
-          alt="Kamping logo"
-          class="h-12"
-          src="../assets/images/kamping-logo.png"
-        />
+        <kamping-logo />
       </router-link>
       <button
         class="sm:hidden focus text-xs font-thin text-grey-500 border border-grey-300 py-1 px-3 rounded-full"
@@ -69,9 +65,11 @@
 
 <script>
 import Wrapper from '@/components/Wrapper'
+import KampingLogo from '@/components/atoms/KampingLogo'
 export default {
   components: {
-    wrapper: Wrapper
+    wrapper: Wrapper,
+    'kamping-logo': KampingLogo
   },
   data() {
     return {
