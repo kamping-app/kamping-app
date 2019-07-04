@@ -7,7 +7,7 @@
         src="../assets/images/kamping-logo.png"
       />
       <p class="font-light text-grey-500 text-lg mb-2">
-        Find the best campinground in...
+        {{ $t('search.findthebestplace') }}
       </p>
       <div class="flex justify-between">
         <input
@@ -20,7 +20,7 @@
         <button
           class="bg-yellow-vivid-500 py-2 px-4 text-grey-900 font-semibold"
         >
-          Find
+          {{ $t('search.button') }}
         </button>
       </div>
       <featured-cities
