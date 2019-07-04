@@ -9,20 +9,7 @@
       <p class="font-light text-grey-500 text-lg mb-2">
         {{ $t('search.findthebestplace') }}
       </p>
-      <div class="flex justify-between">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          class="border border-grey-100  px-2 py-2 text-grey-500 text-lg font-light w-full"
-          placeholder="anywhere"
-        />
-        <button
-          class="bg-yellow-vivid-500 py-2 px-4 text-grey-900 font-semibold"
-        >
-          {{ $t('search.button') }}
-        </button>
-      </div>
+      <search-box class="flex justify-between" />
       <featured-cities
         :cities="[
           {
@@ -51,11 +38,13 @@
 
 <script>
 import FeaturedCities from '../components/FeaturedCities'
+import SearchBox from '@/components/molecules/SearchBox'
 
 export default {
   name: 'home',
   components: {
-    'featured-cities': FeaturedCities
+    'featured-cities': FeaturedCities,
+    'search-box': SearchBox
   }
 }
 </script>
