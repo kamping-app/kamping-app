@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import Axios from 'axios'
+import { createI18n } from './i18n'
 
 // * Axios default settings
 Axios.defaults.baseURL = process.env.VUE_APP_API_URL
@@ -18,7 +19,10 @@ Vue.component('default-layout', Default)
 
 Vue.config.productionTip = false
 
+const i18n = createI18n()
+
 new Vue({
   router,
+  i18n,
   render: h => h(App)
 }).$mount('#app')
