@@ -2,10 +2,7 @@
   <div class="home h-screen flex items-center">
     <div class="w-full max-w-md mx-auto px-2">
       <kamping-logo class=" mx-auto" />
-      <p class="font-light text-grey-500 text-lg mb-2">
-        {{ $t('search.findthebestplace') }}
-      </p>
-      <search-box class="flex justify-between" />
+      <search-box class="flex justify-between items-end" />
       <featured-cities
         :cities="[
           {

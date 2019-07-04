@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="bg-yellow-vivid-500 py-2 px-4 text-grey-900 font-semibold"
+    class="bg-yellow-vivid-500 text-lg border border-yellow-vivid-500 py-2 px-4 text-grey-900 font-semibold"
     to="path"
     tag="button"
   >
