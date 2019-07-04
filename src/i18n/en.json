@@ -4,6 +4,7 @@
   },
   "search": {
     "findthebestplace": "Find the best campinground in...",
-    "button": "Search"
+    "button": "Search",
+    "placeholder": "anywhere..."
   }
 }

@@ -4,6 +4,7 @@
   },
   "search": {
     "findthebestplace": "Encontre os melhores lugares para acampar em...",
-    "button": "Buscar"
+    "button": "Buscar",
+    "placeholder": "qualquer lugar..."
   }
 }
