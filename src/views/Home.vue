@@ -1,5 +1,5 @@
 <template>
-  <div class="home h-screen flex items-center">
+  <div class="">
     <div class="w-full max-w-md mx-auto px-2">
       <search-box class="flex justify-between items-end" />
       <featured-places :cities="dataCities" />
