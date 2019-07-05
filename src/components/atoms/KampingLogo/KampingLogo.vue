@@ -1,14 +1,14 @@
 <template>
-  <img :src="logo" alt="Kamping logo" class="w-64 mb-6" />
+  <img :src="logo" :class="[`h-${height}`]" alt="Kamping logo" />
 </template>
 
 <script>
 export default {
   name: 'kamping-logo',
   props: {
-    logoSize: {
+    height: {
       type: String,
-      default: 'medium'
+      default: '6'
     }
   },
   data() {
