@@ -1,0 +1,23 @@
+[
+  {
+    "state": "Minas Gerais",
+    "city": "São Tomé das Letras",
+    "slug": "sao-tome-das-letras",
+    "hashids": "vY8qxN",
+    "image": "sao-tome.jpg"
+  },
+  {
+    "state": "São Paulo",
+    "city": "Socorro",
+    "slug": "socorro",
+    "hashids": "vY8qxN",
+    "image": "socorro.jpg"
+  },
+  {
+    "state": "Minas Gerais",
+    "city": "Extrema",
+    "slug": "extrema",
+    "hashids": "vY8qxN",
+    "image": "extrema.jpg"
+  }
+]
