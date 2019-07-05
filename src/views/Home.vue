@@ -2,42 +2,26 @@
   <div class="home h-screen flex items-center">
     <div class="w-full max-w-md mx-auto px-2">
       <search-box class="flex justify-between items-end" />
-      <featured-cities
-        :cities="[
-          {
-            state: 'Minas Gerais',
-            city: 'São Thomé das Letras',
-            slug: 'sao-thome-das-letras',
-            hashids: 'vY8qxN'
-          },
-          {
-            state: 'São Paulo',
-            city: 'Socorro',
-            slug: 'socorro',
-            hashids: 'vY8qxN'
-          },
-          {
-            state: 'Minas Gerais',
-            city: 'Extrema',
-            slug: 'extrema',
-            hashids: 'vY8qxN'
-          }
-        ]"
-      />
+      <featured-places :cities="dataCities" />
     </div>
   </div>
 </template>
 
 <script>
-
-import FeaturedCities from '../components/FeaturedCities'
+import FeaturedCitiesData from '@/data/featured-cities.json'
+import FeaturedPlaces from '@/components/organismis/FeaturedPlaces'
 import SearchBox from '@/components/molecules/SearchBox'
 
 export default {
   name: 'home',
   components: {
-    'featured-cities': FeaturedCities,
+    'featured-places': FeaturedPlaces,
     'search-box': SearchBox
+  },
+  data: function() {
+    return {
+      dataCities: FeaturedCitiesData
+    }
   }
 }
 </script>
