@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      meta: { layout: 'blank' },
+      meta: { layout: 'default' },
       component: Home
     },
     {
