@@ -7,7 +7,7 @@
         src="../assets/images/kamping-logo.png"
       />
       <p class="font-light text-grey-500 text-lg mb-2 text-center">
-        Find the best campinground anywhere.
+        Find the best campground anywhere.
       </p>
       <hr class="border-b border-grey-200 my-6" />
       <div class="text-center">
