@@ -1,7 +1,6 @@
 <template>
   <div class="home h-screen flex items-center">
     <div class="w-full max-w-md mx-auto px-2">
-      <kamping-logo class=" mx-auto" />
       <search-box class="flex justify-between items-end" />
       <featured-cities
         :cities="[
@@ -30,7 +29,6 @@
 </template>
 
 <script>
-import KampingLogo from '@/components/atoms/KampingLogo'
 
 import FeaturedCities from '../components/FeaturedCities'
 import SearchBox from '@/components/molecules/SearchBox'
@@ -38,7 +36,6 @@ import SearchBox from '@/components/molecules/SearchBox'
 export default {
   name: 'home',
   components: {
-    'kamping-logo': KampingLogo,
     'featured-cities': FeaturedCities,
     'search-box': SearchBox
   }
