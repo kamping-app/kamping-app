@@ -10,13 +10,6 @@ Axios.defaults.headers.common['Authorization'] = `bearer ${
   process.env.VUE_APP_API_TOKEN
 }`
 
-// Vue Layouts
-import Blank from './layouts/Blank'
-import Default from './layouts/Default'
-
-Vue.component('blank-layout', Blank)
-Vue.component('default-layout', Default)
-
 Vue.config.productionTip = false
 
 const i18n = createI18n()

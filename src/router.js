@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 import City from './views/City.vue'
+
+// * Pages
+import Home from '@/components/pages/Home'
+import PageNotFound404 from '@/components/pages/PageNotFound404'
 
 Vue.use(Router)
 
@@ -12,20 +15,18 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      meta: { layout: 'default' },
       component: Home
     },
     {
       path: '/cities/:city_slug/:city_id',
       name: 'city',
       component: City,
-      meta: { layout: 'default' },
       props: true
     },
     {
       path: '/*',
       name: '404',
-      component: () => import('./views/404.vue')
+      component: PageNotFound404
     }
   ]
 })
