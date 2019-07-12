@@ -30,7 +30,7 @@ export default {
     inputPlaceholder: {
       type: String,
       default: 'text'
-    },
+    }
   }
 }
 </script>
