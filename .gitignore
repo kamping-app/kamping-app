@@ -22,4 +22,4 @@ yarn-error.log*
 *.sw?
 
 # Cypress
-/cypress/videos
+/tests/e2e/cypress/videos

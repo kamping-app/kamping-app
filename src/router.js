@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import City from './views/City.vue'
 
 // * Pages
 import Home from '@/components/pages/Home'
 import PageNotFound404 from '@/components/pages/PageNotFound404'
+import Cities from '@/components/pages/Cities'
 
 Vue.use(Router)
 
@@ -20,7 +20,7 @@ export default new Router({
     {
       path: '/cities/:city_slug/:city_id',
       name: 'city',
-      component: City,
+      component: Cities,
       props: true
     },
     {
