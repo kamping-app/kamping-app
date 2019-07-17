@@ -6,9 +6,9 @@ import { createI18n } from './i18n'
 
 // * Axios default settings
 Axios.defaults.baseURL = process.env.VUE_APP_API_URL
-Axios.defaults.headers.common['Authorization'] = `bearer ${
-  process.env.VUE_APP_API_TOKEN
-}`
+Axios.defaults.headers.common[
+  'Authorization'
+] = `bearer ${process.env.VUE_APP_API_TOKEN}`
 
 Vue.config.productionTip = false
 

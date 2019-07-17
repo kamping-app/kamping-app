@@ -8,9 +8,7 @@
           { label: city.country.name, url: `/${city.country.slug}` },
           {
             label: city.state.name,
-            url: `/${city.country.slug}/${city.state.slug}/${
-              city.state.hashids
-            }`
+            url: `/${city.country.slug}/${city.state.slug}/${city.state.hashids}`
           }
         ]"
         :current="city.name"
