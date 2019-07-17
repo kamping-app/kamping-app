@@ -19,7 +19,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/cities/:city_slug/:city_id',
+      path: '/:country_slug/:city_slug/:city_id',
       name: 'city',
       component: Cities,
       props: true
