@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import Home from '@/components/pages/Home'
 import PageNotFound404 from '@/components/pages/PageNotFound404'
 import Cities from '@/components/pages/Cities'
+import Campings from '@/components/pages/Campings'
 
 Vue.use(Router)
 
@@ -21,6 +22,12 @@ export default new Router({
       path: '/cities/:city_slug/:city_id',
       name: 'city',
       component: Cities,
+      props: true
+    },
+    {
+      path: '/campings/:camping_id',
+      name: 'camping',
+      component: Campings,
       props: true
     },
     {
