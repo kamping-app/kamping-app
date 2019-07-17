@@ -1,7 +1,7 @@
 <template>
   <ul class="mb-3">
     <li class="inline-block mr-1" v-for="(link, index) in links" :key="index">
-      <generic-link size="sm" color="yellow-vivid-600" :to="link.url">
+      <generic-link size="sm" color="yellow-vivid-600" :path="`${link.url}`">
         {{ link.label }}
       </generic-link>
       <generic-text size="sm">&bull;</generic-text>

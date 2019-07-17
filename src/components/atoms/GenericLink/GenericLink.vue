@@ -1,5 +1,5 @@
 <template>
-  <router-link :class="[`text-${color}`, `text-${size}`]" to="path" tag="a">
+  <router-link :class="[`text-${color}`, `text-${size}`]" :to="path" tag="a">
     <!-- @slot for link text -->
     <slot />
   </router-link>
