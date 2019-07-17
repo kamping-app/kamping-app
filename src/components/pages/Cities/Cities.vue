@@ -33,7 +33,7 @@
 
 <script>
 import CityService from '@/services/city.services'
-import CampingCard from '@/components/CampingCard'
+import CampingCard from '@/components/molecules/CampingCard'
 import Loading from '@/components/atoms/Loading'
 import GenericTitle from '@/components/atoms/GenericTitle'
 import Breadcrumbs from '@/components/molecules/Breadcrumbs'
