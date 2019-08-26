@@ -1,7 +1,8 @@
 <template>
   <router-link
-    class="bg-yellow-vivid-500 text-lg border border-yellow-vivid-500 py-2 px-4 text-grey-900 font-semibold"
-    to="path"
+    class="bg-yellow-vivid-400 text-base rounded border border-yellow-vivid-400 py-2 px-4 text-grey-800 font-semibold"
+    :to="path"
+    :class="customClass"
     tag="button"
   >
     <!-- @slot for button text -->
@@ -16,6 +17,10 @@ export default {
     path: {
       type: String,
       default: ''
+    },
+    customClass: {
+      type: String,
+      default: undefined
     }
   }
 }

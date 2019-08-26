@@ -3,7 +3,8 @@
     :type="inputType"
     :name="inputName"
     :id="inputId"
-    class="border border-grey-100  px-2 py-2 text-grey-500 text-lg font-light w-full"
+    class="form-input"
+    :class="customClass"
     :placeholder="inputPlaceholder"
   />
 </template>
@@ -15,6 +16,11 @@ export default {
     inputType: {
       type: String,
       default: 'text'
+    },
+
+    customClass: {
+      type: String,
+      default: undefined
     },
 
     inputName: {
