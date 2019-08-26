@@ -1,65 +1,37 @@
 <template>
-  <header class="my-3">
-    <wrapper class="flex justify-between items-center">
-      <router-link to="/">
-        <kamping-logo />
-      </router-link>
-      <button
-        class="sm:hidden focus text-xs font-thin text-grey-500 border border-grey-300 py-1 px-3 rounded-full"
-        v-on:click="toggleMobileMenu"
-      >
-        menu
-      </button>
-      <nav class="hidden sm:block">
-        <router-link
-          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
-          to="/"
-          >Principais cidades</router-link
-        >
-        <router-link
-          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
-          to="/"
-          >Blog</router-link
-        >
-        <router-link
-          class="uppercase ml-4 tracking-wide text-grey-700 hover:text-yellow-vivid-600 border-b border-transparent hover:border-yellow-vivid-600"
-          to="/"
-          >Login</router-link
-        >
-      </nav>
-    </wrapper>
-
-    <div v-show="showMobileMenu" class="absolute sm:hidden inset-0">
-      <div
-        class="h-screen  w-screen bg-yellow-vivid-050 flex items-center justify-center"
-      >
-        <div class="text-center">
-          <img
-            alt="Kamping logo"
-            class="h-8 mx-auto"
-            src="../assets/images/kamping-logo.png"
-          />
-          <nav class="my-8">
-            <router-link class="block uppercase my-2 text-grey-500" to="/"
-              >Principais cidades</router-link
+  <header class="border-b border-grey-100 py-4 bg-orange-100 mb-4">
+    <wrapper>
+      <div class="flex flex-wrap justify-between items-center">
+        <div class="sm:oder-1">
+          <router-link to="/">
+            <kamping-logo />
+          </router-link>
+        </div>
+        <div class="sm:order-3">
+          <div>
+            <router-link
+              class="bg-yellow-vivid-400 py-2 px-3 uppercase tracking-wide block rounded text-xs text-grey-800 font-semibold"
+              to="/login"
             >
-            <router-link class="block uppercase my-2 text-grey-500" to="/"
-              >Blog</router-link
-            >
-            <router-link class="block uppercase my-2 text-grey-500" to="/"
-              >Login</router-link
-            >
+              Login
+            </router-link>
+          </div>
+        </div>
+        <div class="w-full sm:flex-1 sm:order-2 mt-4 sm:mt-0 sm:ml-8">
+          <nav class="flex justify-around sm:block text-sm">
+            <router-link :class="classLink" to="/">
+              Principais cidades
+            </router-link>
+            <router-link :class="classLink" to="/">
+              Destaques
+            </router-link>
+            <router-link :class="classLink" to="/">
+              Blog
+            </router-link>
           </nav>
-          <button
-            v-on:click="toggleMobileMenu"
-            class="text-xs font-thin text-grey-500 border border-grey-300 py-1 px-3 rounded-full"
-          >
-            close
-          </button>
         </div>
       </div>
-    </div>
-    <hr class="border-t border-grey-100 mt-3" />
+    </wrapper>
   </header>
 </template>
 
@@ -73,7 +45,8 @@ export default {
   },
   data() {
     return {
-      showMobileMenu: false
+      showMobileMenu: false,
+      classLink: 'text-sm sm:text-base text-grey-700 sm:mr-4'
     }
   },
   methods: {

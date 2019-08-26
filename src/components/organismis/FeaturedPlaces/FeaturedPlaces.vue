@@ -1,17 +1,5 @@
 <template>
   <div class="flex flex-wrap">
-    <!-- <div
-      class="w-1/2 mx-3 border border-grey-800"
-      v-for="(city, index) in cities"
-      :key="index"
-    >
-      <h3 class="">{{ city.city }}</h3>
-      <router-link
-        class="underline"
-        :to="`/cities/${city.slug}/${city.hashids}`"
-        >Ver cidade</router-link
-      >
-    </div> -->
     <generic-card
       class="w-full"
       :card-title="city.city"
@@ -33,7 +21,7 @@ export default {
   props: {
     cities: {
       type: Array,
-      default: null
+      default: undefined
     }
   }
 }
