@@ -1,7 +1,7 @@
 <template>
   <div class="flex my-4">
     <div class="flex-1">
-      <label class="text-xs text-gray-400" for="search">{{
+      <label class="text-xs uppercase text-grey-500" for="search">{{
         $t('search.findthebestplace')
       }}</label>
       <generic-input
