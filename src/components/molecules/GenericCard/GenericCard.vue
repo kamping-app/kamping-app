@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="w-full">
     <!-- Image -->
     <img v-if="!cardImageAsBackground" :src="image" alt="" />
     <!-- Image As Background -->
     <div
       v-if="cardImageAsBackground"
-      class="h-48 w-full md:w-2/5 bg-center bg-cover rounded-t md:rounded-tr-none md:rounded-l"
+      class="h-48 w-full bg-center bg-cover rounded-t md:rounded-tr-none md:rounded-l"
       :style="`background-image: url('${image}')`"
     ></div>
 
     <!-- Title -->
-    <generic-title v-if="cardTitle != null">
+    <generic-title tag="h3" v-if="cardTitle != null">
       {{ cardTitle }}
     </generic-title>
 

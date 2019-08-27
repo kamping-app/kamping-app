@@ -1,4 +1,7 @@
 {
+  "general": {
+    "trending": "Trending"
+  },
   "header": {
     "builtby": "built with <3 by"
   },

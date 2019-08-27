@@ -1,4 +1,7 @@
 {
+  "general": {
+    "trending": "Destaques"
+  },
   "header": {
     "builtby": "feito com <3 por"
   },
