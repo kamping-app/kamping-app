@@ -8,12 +8,12 @@ export default {
   props: {
     height: {
       type: String,
-      default: '6'
+      default: '12'
     }
   },
   data() {
     return {
-      logo: require('@/assets/images/kamping-logo.png')
+      logo: require('@/assets/images/kamping-logo-icon.png')
     }
   }
 }
