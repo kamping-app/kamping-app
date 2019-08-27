@@ -1,18 +1,18 @@
 <template>
-  <div class="flex my-4">
-    <div class="flex-1">
-      <label class="text-xs uppercase text-grey-500" for="search">{{
+  <div>
+    <div class="w-full">
+      <label class="text-sm uppercase text-white" for="search">{{
         $t('search.findthebestplace')
       }}</label>
       <generic-input
         input-id="search"
         input-name="search"
-        custom-class="w-full rounded-r-none"
+        custom-class="w-full"
         :input-placeholder="$t('search.placeholder')"
       />
     </div>
-    <div>
-      <generic-button custom-class="rounded-l-none">
+    <div class="w-full mt-3">
+      <generic-button custom-class="w-full">
         {{ $t('search.button') }}
       </generic-button>
     </div>

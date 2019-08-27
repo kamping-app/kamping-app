@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="bg-buttercup-400 text-base rounded border border-buttercup-400 py-2 px-4 text-grey-800 font-semibold"
+    class="bg-buttercup-500 text-base rounded border border-buttercup-500 py-2 px-4 text-buttercup-900 font-semibold"
     :to="path"
     :class="customClass"
     tag="button"

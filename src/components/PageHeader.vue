@@ -1,5 +1,5 @@
 <template>
-  <header class="border-b border-grey-100 py-4 bg-orange-100 mb-4">
+  <header class="border-b border-grey-100 py-4 bg-orange-100">
     <wrapper>
       <div class="flex flex-wrap justify-between items-center">
         <div class="sm:oder-1">
@@ -10,7 +10,7 @@
         <div class="sm:order-3">
           <div>
             <router-link
-              class="bg-yellow-vivid-400 py-2 px-3 uppercase tracking-wide block rounded text-xs text-grey-800 font-semibold"
+              class="bg-buttercup-500 py-2 px-3 uppercase tracking-wide block rounded text-xs text-buttercup-100 font-semibold"
               to="/login"
             >
               Login
