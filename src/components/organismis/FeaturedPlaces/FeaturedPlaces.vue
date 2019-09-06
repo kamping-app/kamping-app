@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="mb-3 text-3xl font-thin tracking-wide">{{ $t('general.trending') }}</h2>
+    <h2 class="mb-3 text-3xl font-thin tracking-wide">
+      {{ $t('general.trending') }}
+    </h2>
     <div class="flex flex-wrap">
       <div v-for="(city, index) in cities" :key="index" class="w-1/2 sm:w-1/3">
         <generic-card
