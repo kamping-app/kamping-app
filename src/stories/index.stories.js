@@ -1,4 +1,10 @@
-// import GenericButton from './GenericButton'
-// import { storiesOf } from '@storybook/vue';
+/* eslint-disable import/no-extraneous-dependencies */
+import { configure } from '@storybook/vue'
 
-// stories.add('Defaykt')
+const req = require.context('@/components', true, /.stories.js$/)
+
+function loadStories() {
+  req.keys().forEach(filename => req(filename))
+}
+
+configure(loadStories, module)
