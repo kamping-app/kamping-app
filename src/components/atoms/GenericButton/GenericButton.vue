@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="bg-buttercup-500 text-base rounded border border-buttercup-500 py-2 px-4 text-buttercup-900 font-semibold"
+    class="button"
     :to="path"
     :class="customClass"
     tag="button"
@@ -25,3 +25,16 @@ export default {
   }
 }
 </script>
+
+<style lang="css" scoped>
+.button {
+  background-color: #F0B429;
+  border: 1px solid #F0B429;
+  border-radius: .25rem;
+  color: #8D2B0B;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  font-weight: 600
+}
+</style>
