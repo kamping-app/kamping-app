@@ -4,5 +4,5 @@ import GenericButton from './GenericButton'
 
 storiesOf('GenericButton', module).add('Primary', () => ({
   components: { GenericButton },
-  template: '<generic-button>Buy now</generic-button>'
+  template: '<generic-button>Call To Action</generic-button>'
 }))

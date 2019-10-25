@@ -1,8 +1,8 @@
 <template>
   <router-link
-    class="button"
-    :to="path"
+    class="rounded bg-buttercup-500 border border-buttercup-500 text-yellow-vivid-900 py-2 px-4 font-bold"
     :class="customClass"
+    :to="to"
     tag="button"
   >
     <!-- @slot for button text -->
@@ -14,9 +14,9 @@
 export default {
   name: 'generic-button',
   props: {
-    path: {
+    to: {
       type: String,
-      default: ''
+      default: undefined
     },
     customClass: {
       type: String,
@@ -25,16 +25,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css" scoped>
-.button {
-  background-color: #F0B429;
-  border: 1px solid #F0B429;
-  border-radius: .25rem;
-  color: #8D2B0B;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  font-weight: 600
-}
-</style>
